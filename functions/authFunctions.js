@@ -30,7 +30,7 @@ exports.exchangeToken = onRequest({
     // ⚠️ 一時的な設定（本番環境では必ず環境変数を使用）
     const FACEBOOK_APP_ID = '1894715221336033';
     const FACEBOOK_APP_SECRET = 'dc3a2dd78af2b773834b4d0608b548f7'; // ⬅️ ここを実際のApp Secretに置き換えてください
-    const REDIRECT_URI = 'https://krugu1.vercel.app/auth-callback.html';
+    const REDIRECT_URI = 'https://krugu1-git-main-miramuls-projects.vercel.app/auth-callback.html';
 
     console.log('🔑 Exchanging code for access token...');
     console.log('📋 App ID:', FACEBOOK_APP_ID);
@@ -418,4 +418,5 @@ exports.getAuthStatus = onRequest({
       error: error.message
     });
   }
+
 });
