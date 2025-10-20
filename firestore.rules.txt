@@ -1,0 +1,15 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // scheduledPosts コレクションへのアクセス制御
+    match /scheduledPosts/{postId} {
+      // 開発環境: 全てのアクセスを許可
+      allow read, write: if true;
+      
+      // 本番環境では以下のように認証を追加推奨
+      // allow read, write: if request.auth != null;
+    }
+    
+    // その他のコレクションもここに追加可能
+  }
+}

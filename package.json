@@ -1,0 +1,23 @@
+{
+  "name": "instagram-post-scheduler",
+  "version": "1.0.0",
+  "description": "Instagram予約投稿システム",
+  "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "deploy:functions": "cd functions && firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "axios": "^1.6.0",
+    "multiparty": "^4.2.3"
+  },
+  "devDependencies": {
+    "firebase-functions": "^4.5.0",
+    "firebase-tools": "^13.0.0"
+  }
+}

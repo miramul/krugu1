@@ -1,0 +1,12 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "scheduledPosts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "scheduledTime", "order": "ASCENDING" }
+      ]
+    }
+  ]
+}

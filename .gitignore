@@ -1,0 +1,6 @@
+node_modules/
+.env.local
+.vercel
+functions/node_modules/
+*.log
+.firebase/
